@@ -3,3 +3,15 @@
 #Adolescente: mayor o igual que 12 años y menor que 18 años.
 #Adulto/a joven: mayor o igual que 18 años y menor que 30 años.
 #Adulto/a: mayor o igual que 30 años.
+
+edad = int(input("Ingrese su edad: "))
+
+if edad < 12:
+    print("Niño/a")
+elif edad >= 12 and edad < 18:
+    print("Adolescente")
+elif edad >=18 and edad < 30:
+    print("Adulto/a joven")
+else: 
+    print("Adulto/a")
+
