@@ -4,3 +4,11 @@
 #Escribí una función recursiva contar_bloques(n) que reciba el número de bloques en el
 #nivel más bajo y devuelva el total de bloques que necesita para construir toda la
 #pirámide
+
+def contar_bloques(n):
+    if n == 1:
+        return 1
+    else:
+        return n + contar_bloques(n-1)
+
+print(contar_bloques(4))
